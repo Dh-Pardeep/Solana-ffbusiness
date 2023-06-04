@@ -478,20 +478,6 @@ transition: all 0.5s linear;
 .btn_after:hover::after{
   width: 100%;
 }
-.bgr_transform{
-  animation: infinite alternate 3s ease-in-out;
-    
-}
-@keyframes {
-  animation-duration: 3s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-fill-mode: none;
-  animation-play-state: running;
-  animation-name: burger_2;
-}
 
 @media (max-width:576px){
   .w_100{
@@ -504,14 +490,6 @@ transition: all 0.5s linear;
     width: 15%;
   }
 }
-
-
-
-
-
-
-
- 
 @media (min-width:576px) {
   .fs_sm_28 {
     font-size: 28px;
@@ -540,11 +518,6 @@ transition: all 0.5s linear;
   .fs_sm_16 {
     font-size: 16px;
   }
-  
-
- 
-  
-
 }
 
 @media (min-width:768px) {
