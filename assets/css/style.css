@@ -197,7 +197,7 @@ img[alt="we_are_open"]{
 .btn_2 {
   background: #F4241E;
   border-radius: 10px;
-  padding: 15px 32px;
+  padding: 12px 17px;
 }
 
 .btn_2:hover {
@@ -453,8 +453,8 @@ img[alt="burger_image_8"] {
 .order_1 {
   order: 1;
 }
-.w_10{
-  width:10%;
+.w_45px{
+  width:45px;
 }
 .w_200px{
   width: 200px;
@@ -521,6 +521,12 @@ transition: all 0.5s linear;
   }
   .fs_sm_16 {
     font-size: 16px;
+  }
+  .btn_2{
+    padding: 13px 24px;
+  }
+  .w_sm_65px{
+    width: 65px;
   }
 }
 
@@ -660,6 +666,12 @@ transition: all 0.5s linear;
     margin-left: auto;
     margin-right: auto;
   }
+  .fs_md_18{
+    font-size: 18px;
+  }
+  .btn_2{
+    padding: 14px 28px;
+  }
 }
 
 @media (min-width:992px) {
@@ -779,6 +791,12 @@ transition: all 0.5s linear;
 .w_lg_8{
   width: 8%;
 }
+.fs_lg_20{
+  font-size: 20px;
+}
+.btn_2{
+  padding: 15px 32px;
+}
 
 }
 
@@ -853,4 +871,12 @@ transition: all 0.5s linear;
     font-size: 48px;
   }
 
+}
+@media (min-width:1400px){
+  img[alt="burger_image_2"]{
+    top: 64%;
+  }
+  img[alt="burger_image_6"]{
+    top: 64%;
+  }
 }
