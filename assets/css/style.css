@@ -479,6 +479,10 @@ transition: all 0.5s linear;
   width: 100%;
 }
 
+.btn_hover:hover{
+  color: #F4241E;
+}
+
 @media (max-width:576px){
   .w_100{
     width: 100%;
