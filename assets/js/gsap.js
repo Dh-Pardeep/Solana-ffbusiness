@@ -43,7 +43,7 @@ tl.from("#navlogo ul li, #navlogo div img", {
             scroller: "body",
             start: "60% 85%",
             end: "bottom 90%",
-            markers: false,
+            markers: true,
             scrub: true
         }
     })
