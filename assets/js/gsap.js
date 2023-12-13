@@ -108,11 +108,25 @@
 // });
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to("#timelinemain .timeline_one", {
+gsap.to("#timelineMain1 .timeline_01", {
     scrollTrigger: {
-        trigger: "#timelinemain .timeline_one",
-        start: "top center",
-        end: "bottom 10%",
+        trigger: "#timelineMain1 ",
+        start: "start center",
+        end: "bottom center",
+        scrub: true,
+        markers: false,
+    },
+    duration: 5,
+    height: "100%",
+    ease: "power1.out",
+}); 
+
+
+gsap.to("#timelineMain1 .timeline_02", {
+    scrollTrigger: {
+        trigger: ".timeline_02 ",
+        start: "start 30%",
+        end: "bottom 0%",
         scrub: true,
         markers: true,
     },
@@ -120,3 +134,5 @@ gsap.to("#timelinemain .timeline_one", {
     height: "100%",
     ease: "power1.out",
 });
+
+

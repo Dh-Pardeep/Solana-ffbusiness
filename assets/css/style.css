@@ -354,7 +354,8 @@ img[alt="burger_image_8"] {
 }
 
 .timeline1one,
-.timeline_two {
+.timeline_two,
+.timeline2one {
   position: absolute;
   width: 8px;
   height: 100%;
@@ -366,30 +367,9 @@ img[alt="burger_image_8"] {
 }
 
 .timeline2,
-.timeline_two {
+.timeline_two,
+.timeline2one {
   left: 0% !important;
-}
-
-.timeline_one {
-  position: absolute;
-  width: 8px;
-  height: 0%;
-  background-color: red;
-  top: 52%;
-  bottom: 0;
-  left: 100%;
-  transform: translate(-50%);
-}
-
-.timeline_full {
-  position: absolute;
-  width: 8px;
-  height: 100%;
-  background-color: white;
-  top: 52px;
-  bottom: 0;
-  left: 100%;
-  transform: translate(-50%);
 }
 
 .left::after {
