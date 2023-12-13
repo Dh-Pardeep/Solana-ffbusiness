@@ -1,3 +1,4 @@
+// ========= NAVBAR ==========
 gsap.from("#navlogo ul li , #navlogo div img", {
   y: -80,
   duration: 0.3,
@@ -6,6 +7,7 @@ gsap.from("#navlogo ul li , #navlogo div img", {
   delay: 0.1,
   // rotate:90,
 });
+// ======== BURGERS ============
 gsap.registerPlugin(ScrollTrigger);
 const tl = gsap.timeline({
   scrollTrigger: {
@@ -25,8 +27,9 @@ tl.fromTo(
     rotate: 360,
     duration: 1.0,
   }
-)
-  .from("#discover", {
+  )
+  // ========== DISCOVER ===========
+  gsap.from("#discover", {
     x: -100,
     opacity: 0,
     duration: 0.4,
@@ -40,7 +43,7 @@ tl.fromTo(
       scrub: true,
     },
   })
-  .from("#discover_img", {
+  gsap.from("#discover_img", {
     x: 100,
     opacity: 0,
     duration: 0.4,
@@ -54,6 +57,7 @@ tl.fromTo(
       scrub: true,
     },
   });
+  // ======== CARDS =============
 tl.from("#cards .cards", {
   x: 100,
   opacity: 0,
@@ -69,7 +73,7 @@ tl.from("#cards .cards", {
     markers: false,
   },
 });
-
+//========== SUPPLIES =============
 tl.from(".supplies",{
   scale:.5,
   opacity:0,
@@ -85,52 +89,44 @@ tl.from(".supplies",{
     markers: false,
   }
 })
-// const tm = gsap.timeline({
-//   scrollTrigger: {
-//     trigger: "#timeline",
-//     start: "10% 30%",
-//     end:"bottom 90%",
-//     toggleActions: "play none none reverse",
-//     markers: false,
-//   },
-// });
-// tm.fromTo(
-//   ".timeline",
-//   {
-//     backgroundColor: "white",
-//     duration: 1.0,
-//   },
-//   {
-//     backgroundColor:"red",
-//     duration: 1.0,
-//   }
-// )
-
-// gsap.registerPlugin(ScrollTrigger);
-
-// gsap.to(':root', {
-//   '--timeline-background-color': 'blue', // Change this to your desired color
-//   scrollTrigger: {
-//     trigger: '#timeline',
-//     start: 'top center',
-//     end: 'bottom center',
-//     scrub: true,
-//   }
-// }); 
-
-
-const team = gsap.timeline({
-  scrollTrigger: {
-    trigger: "#slide",
-    start: "10% 35%",
+// ======ROADMAP ===========
+gsap.to("#roadmap1, .roadmap_line",{
+  scrollTrigger:{
+    trigger:"#roadmap1, .roadmap_line",
+    start:"start center",
     end:"bottom center",
-    pin:true,
-    // toggleActions: "play none none reverse",
-    markers: true,
-  },
-});
+    markers:false,
+    scrub:true
 
-team.from(".scroll",{
-  x:0,
-  pinnedContainer: ".selector",
+  },
+  height:"100%",
+  duration:5,
+  ease:"power1.out"
+})
+gsap.to("#roadmap2, .roadmap_line2",{
+  scrollTrigger:{
+    trigger:"#roadmap2, .roadmap_line2",
+    start:"70% 44%",
+    end:"100% 20%",
+    markers:true,
+    scrub:true
+
+  },
+  height:"100%",
+  duration:5,
+  ease:"power1.out"
+})
+// ========= SLIDER ===========
+let sections = gsap. utils.toArray(".scroll");
+gsap.to(sections,{
+  xPercent:-59 * (sections.length - 1),
+  ease:"linear",
+  scrollTrigger: {
+        trigger: "#slider",
+        pin:true,
+        pinSpacing:true,
+        scrub:true,
+        start:"top 30%",
+        end:"bottom 30%"
+  }
 })

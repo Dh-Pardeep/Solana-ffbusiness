@@ -16,6 +16,49 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+    <style>
+      .roadmap_line_white{
+        position: absolute;
+        height: 100%;
+        width: 8px;
+        background-color: white;
+        top: 52px;
+        left: 100%;
+        transform: translatex(-50%);
+      }
+      .roadmap_line{
+        position: absolute;
+        width: 8px;
+        background-color: red;
+        z-index: 1;
+        height: 0;
+        top: 52px;
+        left: 100%;
+        transform: translatex(-50%);
+      }
+      .roadmap_line_white2{
+        position: absolute;
+        height: 100%;
+        width: 8px;
+        background-color: white;
+        top: 10%;
+        right: 98.5%;
+        transform: translatex(-50%);
+      }
+      .roadmap_line2{
+        position: absolute;
+        width: 8px;
+        background-color: red;
+        z-index: 1;
+        height: 0;
+        top: 10%;
+        right: 98.5%;
+        transform: translatex(-50%);
+      }
+      div ::-webkit-scrollbar{
+        display: none;
+      }
+    </style>
   </head>
 
   <body>
@@ -386,7 +429,8 @@
               ROADMAP 1.0
             </h2>
           </div>
-          <div class="timeline bg_timeline">
+
+          <div class="overflow-hidden" id="roadmap1">
             <div class="container_timeline left">
               <div class="content">
                 <h2 class="ff_poppins fs_22 fs_md_24">Q4&nbsp;&nbsp;2021</h2>
@@ -396,8 +440,10 @@
                   <li>Apply for secondary marketplace listings</li>
                 </ol>
               </div>
+              <div class="roadmap_line"></div>
+              <div class="roadmap_line_white"></div>
             </div>
-            <div class="container_timeline right">
+            <div class="container_timeline right" id="roadmap2">
               <div class="content">
                 <h2 class="ff_poppins fs_22 fs_md_24">Q1&nbsp;&nbsp;2022</h2>
                 <ol type="1" class="mb-0">
@@ -406,6 +452,8 @@
                   <li>Secure Partnerships</li>
                 </ol>
               </div>
+              <div class="roadmap_line2"></div>
+              <div class="roadmap_line_white2"></div>
             </div>
             <div class="container_timeline left pb-5">
               <div class="content mb-4">
@@ -420,14 +468,14 @@
         </div>
       </section>
       <section class="bg_color_3">
-        <div class="container pb-lg-4">
+        <div class="pb-lg-4">
           <h2
             class="ff_poppins fw_700 fs_32 fs_sm_38 fs_md_43 fs_lg_48 fst-normal text-center color_black pt-5 mb-4 pb-lg-3"
           >
             Team
           </h2>
-          <div class="d-flex align-items-center overflow-x-scroll gap-4" id="slide">
-            <div class="scroll" id="slide">
+          <div class="d-flex align-items-center overflow-x-scroll gap-4" id="slider">
+            <div class="scroll">
               <img
                 src="./assets/image/png/section_last1.png"
                 class=" grid"
@@ -442,7 +490,7 @@
                 Manager
               </h3>
             </div>
-            <div class="scroll" id="slide">
+            <div class="scroll">
               <img
                 src="./assets/image/png/section_last2.png"
                 class=" grid"
@@ -457,7 +505,7 @@
                 Manager
               </h3>
             </div>
-            <div class="scroll" id="slide">
+            <div class="scroll">
               <img
                 src="./assets/image/png/section_last3.png"
                 class=" grid"
@@ -472,7 +520,7 @@
                 Manager
               </h3>
             </div>
-            <div class="scroll" id="slide">
+            <div class="scroll">
               <img
                 src="./assets/image/png/section_last4.png"
                 class=" grid"
@@ -487,7 +535,7 @@
                 Manager
               </h3>
             </div>
-            <div class="scroll" id="slide">
+            <div class="scroll">
               <img
                 src="./assets/image/png/section_last1.png"
                 class=" grid"
@@ -502,7 +550,7 @@
                 Manager
               </h3>
             </div>
-            <div class="scroll" id="slide">
+            <div class="scroll">
               <img
                 src="./assets/image/png/section_last2.png"
                 class=" grid"
@@ -517,7 +565,7 @@
                 Manager
               </h3>
             </div>
-            <div class="scroll" id="slide">
+            <div class="scroll">
               <img
                 src="./assets/image/png/section_last3.png"
                 class=" grid"
@@ -532,7 +580,7 @@
                 Manager
               </h3>
             </div>
-            <div class="scroll selecter" id="slide">
+            <div class="scroll">
               <img
                 src="./assets/image/png/section_last4.png"
                 class=" grid"
