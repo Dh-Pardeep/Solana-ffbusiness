@@ -85,23 +85,52 @@ tl.from(".supplies",{
     markers: false,
   }
 })
-const tm = gsap.timeline({
+// const tm = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: "#timeline",
+//     start: "10% 30%",
+//     end:"bottom 90%",
+//     toggleActions: "play none none reverse",
+//     markers: false,
+//   },
+// });
+// tm.fromTo(
+//   ".timeline",
+//   {
+//     backgroundColor: "white",
+//     duration: 1.0,
+//   },
+//   {
+//     backgroundColor:"red",
+//     duration: 1.0,
+//   }
+// )
+
+// gsap.registerPlugin(ScrollTrigger);
+
+// gsap.to(':root', {
+//   '--timeline-background-color': 'blue', // Change this to your desired color
+//   scrollTrigger: {
+//     trigger: '#timeline',
+//     start: 'top center',
+//     end: 'bottom center',
+//     scrub: true,
+//   }
+// }); 
+
+
+const team = gsap.timeline({
   scrollTrigger: {
-    trigger: "#timeline",
-    start: "10% 30%",
-    end:"bottom 90%",
-    toggleActions: "play none none reverse",
-    markers: false,
+    trigger: "#slide",
+    start: "10% 35%",
+    end:"bottom center",
+    pin:true,
+    // toggleActions: "play none none reverse",
+    markers: true,
   },
 });
-tm.fromTo(
-  ".timeline",
-  {
-    backgroundColor: "white",
-    duration: 1.0,
-  },
-  {
-    backgroundColor:"red",
-    duration: 1.0,
-  }
-)
+
+team.from(".scroll",{
+  x:0,
+  pinnedContainer: ".selector",
+})
