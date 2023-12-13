@@ -34,19 +34,19 @@ gsap.from("#burger .w_45px", {
     scrub: 1,
   },
 });
-// gsap.to(".Img_center_md img", {
-//   scale: 6,
-//   opacity: 0,
-//   duration: 0.5,
-//   scrollTrigger: {
-//     trigger: ".Img_center_md img",
-//     scroller: "body",
-//     // markers: true,
-//     start: "90% 25%",
-//     end: "230% 35%",
-//     scrub: 1,
-//   },
-// });
+gsap.to(".Img_center_md img", {
+  scale: 6,
+  opacity: 0,
+  duration: 0.5,
+  scrollTrigger: {
+    trigger: ".Img_center_md img",
+    scroller: "body",
+    // markers: true,
+    start: "90% 25%",
+    end: "230% 35%",
+    scrub: 1,
+  },
+});
 var tl3 = gsap.timeline({
   scrollTrigger: {
     trigger: "#section2 #para2,#section2 div img",
@@ -106,9 +106,21 @@ gsap.to("#teamImages", {
   x: "-100%",
   ease: "power1.out",
 });
-gsap.to("#timelineMain1 .timeline1", {
+gsap.to("#timelineMain1 #line1", {
   scrollTrigger: {
-    trigger: "#timelineMain1 .timeline1",
+    trigger: "#timelineMain1 #line1",
+    start: "top center",
+    end: "bottom 10%",
+    scrub: true,
+    markers: true,
+  },
+  duration: 5,
+  height: "100%",
+  ease: "power1.out",
+});
+gsap.to("#timelineMain1 #line2", {
+  scrollTrigger: {
+    trigger: "#timelineMain1 #line2",
     start: "top center",
     end: "bottom 10%",
     scrub: true,

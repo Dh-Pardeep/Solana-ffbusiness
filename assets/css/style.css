@@ -340,7 +340,8 @@ img[alt="burger_image_8"] {
   line-height: 36px;
 }
 
-.timeline1 {
+.timeline1,
+.timeline2 {
   position: absolute;
   width: 8px;
   height: 0%;
@@ -352,7 +353,8 @@ img[alt="burger_image_8"] {
   transform: translateX(-50%);
 }
 
-.timeline1one {
+.timeline1one,
+.timeline_two {
   position: absolute;
   width: 8px;
   height: 100%;
@@ -361,6 +363,11 @@ img[alt="burger_image_8"] {
   bottom: 0;
   left: 100%;
   transform: translateX(-50%);
+}
+
+.timeline2,
+.timeline_two {
+  left: 0% !important;
 }
 
 .timeline_one {
