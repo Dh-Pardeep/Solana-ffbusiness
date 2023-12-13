@@ -9,67 +9,60 @@ gsap.from("#navlogo ul li a,#navlogo img", {
 // gsap-2
 var tl = gsap.timeline({
   scrollTrigger: {
-    triger: "two",
-    start: "18% 35%",
-    end: "33% 30%",
+    trigger: "#two",
+    start: "20% 70%",
+    end: "40% center",
     scrub: "true",
   },
 });
 
-tl.to("#game", {
-  scale: "0.61",
-  top: "38.9%",
-  right: "45.4%",
+tl.from("#game", {
+  x: 180,
+  duration: 2,
+  opacity: 0,
+  delay: 2,
+  stagger: 0.3,
+});
+
+tl.from("#text", {
+  x: -180,
+  duration: 2,
+  opacity: 0,
+  delay: 2,
+  stagger: 0.3,
 });
 // gsap-3
 var tl = gsap.timeline({
   scrollTrigger: {
-    triger: "three",
-    start: "43% 50%",
-    end: "50% 50%",
+    trigger: "#three",
+    start: "start 60%",
+    end: "75% center",
     scrub: "true",
   },
 });
 
-tl.to("#number", {
-  y: 0,
-  duration: 0.5,
-  opacity: 1,
-  delay: 0.5,
+tl.from(".img-4 div img", {
+  z: -180,
+  duration: 2,
+  opacity: 0,
+  delay: 2,
   stagger: 0.3,
 });
 // gsap-4
 var tl = gsap.timeline({
   scrollTrigger: {
-    triger: "one",
-    start: "5% 20%",
-    end: "9% 20%",
-    scrub: "true",
-  },
-});
-
-tl.to("#cols", {
-  y: 0,
-  duration: 0.5,
-  opacity: 1,
-  delay: 0.5,
-  stagger: 0.3,
-});
-// gsap-5
-var tl = gsap.timeline({
-  scrollTrigger: {
-    triger: "#five",
-    start: "20% 50%",
-    end: "bottom 70%",
+    trigger: "#four",
+    start: "start 70%",
+    end: "75% 60%",
     scrub: "true",
     markers: "true",
   },
 });
 
-tl.from("#card", {
-  y: 0,
-  duration: 0.5,
-  opacity: 1,
-  delay: 0.5,
-  stagger: 0.3,
+tl.from("#public div", {
+  z: -180,
+  duration: 2,
+  opacity: 0,
+  delay: 2,
+  stagger: 0.5,
 });
