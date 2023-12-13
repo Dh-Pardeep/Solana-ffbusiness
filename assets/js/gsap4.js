@@ -67,7 +67,7 @@ tl.from("#cards .cards", {
   scrollTrigger: {
     trigger: "#cards",
     scroller: "body",
-    start: "10% 65%",
+    start: "0% 50%",
     end: "bottom 90%",
     scrub: true,
     markers: false,
@@ -108,7 +108,7 @@ gsap.to("#roadmap2, .roadmap_line2",{
     trigger:"#roadmap2, .roadmap_line2",
     start:"70% 44%",
     end:"100% 20%",
-    markers:true,
+    markers:false,
     scrub:true
 
   },
