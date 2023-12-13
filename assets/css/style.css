@@ -340,7 +340,9 @@ img[alt="burger_image_8"] {
   line-height: 36px;
 }
 
-.timeline1 {
+.timeline1,
+.timeline2
+{
   position: absolute;
   width: 8px;
   height: 0%;
@@ -352,7 +354,9 @@ img[alt="burger_image_8"] {
   transform: translateX(-50%);
 }
 
-.timeline1one {
+.timeline1one,
+.timeline2one
+{
   position: absolute;
   width: 8px;
   height: 100%;
@@ -363,26 +367,10 @@ img[alt="burger_image_8"] {
   transform: translateX(-50%);
 }
 
-.timeline_one {
-  position: absolute;
-  width: 8px;
-  height: 0%;
-  background-color: red;
-  top: 52%;
-  bottom: 0;
-  left: 100%;
-  transform: translate(-50%);
-}
-
-.timeline_full {
-  position: absolute;
-  width: 8px;
-  height: 100%;
-  background-color: white;
-  top: 52px;
-  bottom: 0;
-  left: 100%;
-  transform: translate(-50%);
+.timeline2,
+.timeline2one
+{
+  left : 0% !important;
 }
 
 .left::after {
@@ -867,7 +855,7 @@ img[alt="burger_image_8"] {
     z-index: 3;
   }
 
-  label[for="icon"] > span {
+  label[for="icon"]>span {
     width: 100%;
     height: 6px;
     cursor: pointer;
@@ -891,7 +879,7 @@ img[alt="burger_image_8"] {
     transition: all 300ms linear;
   }
 
-  input[type="checkbox"]:checked + ul.lg_screen {
+  input[type="checkbox"]:checked+ul.lg_screen {
     pointer-events: all;
     opacity: 1;
     left: 0;
