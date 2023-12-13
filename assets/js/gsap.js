@@ -1,113 +1,30 @@
-
-
-// const tl = gsap.timeline();
-
-// tl.from("#navlogo ul li, #navlogo div img", {
-//     x: -80,
-//     duration: 0.1,
-//     opacity: 0,
-//     stagger: 0.3,
-//     delay: 0.3
-// })
-//     .from("#headeing h2", {
-//         x: -80,
-//         duration: 0.3,
-//         opacity: 0,
-//         stagger: 0.3,
-//         delay: 0.3
-//     })
-
-//     .from("#popularised", {
-//         x: -100,
-//         y: -100,
-//         opacity: 0,
-//         stagger: 0.3,
-//         scrollTrigger: {
-//             trigger: "#popularised",
-//             scroller: "body",
-//             start: "60% 85%",
-//             end: "bottom 90%",
-//             // markers: false,
-//             scrub: true
-//         }
-//     })
-//     .from("#popularised2", {
-//         x: 50,
-//         y: -100,
-//         opacity: 0,
-//         stagger: 0.3,
-//         scrollTrigger: {
-//             trigger: "#popularised",
-//             scroller: "body",
-//             start: "60% 85%",
-//             end: "bottom 90%",
-//             // markers: false,
-//             scrub: true
-//         }
-//     })
-//     .from("#bgr_set", {
-//         duration: 3,
-//         rotate: 360,
-//         repeat: -1,
-//         ease: "linear"
-//     })
-//     .from("#Supplies", {
-//         x: -200,
-//         y: 200,
-//         opacity: 0,
-//         stagger: 1.5,
-//         scrollTrigger: {
-//             trigger: "#Supplies",
-//             scroller: "body",
-//             start: "top center",
-//             end: "bottom center",
-//             // markers: false,
-//             scrub: true,
-//         }
-//     })
-//     .from("#roadmap", {
-//         x: -80,
-//         y: 100,
-//         opacity: 0,
-//         stagger: 0.3,
-//         scrollTrigger: {
-//             trigger: "#roadmap",
-//             scroller: "body",
-//             start: "top center",
-//             end: "bottom center",
-//             // markers: false,
-//             scrub: true,
-//         }
-//     })
-// gsap.to(".Img_center_md img", {
-//     scale: 6,
-//     opacity: 0,
-//     duration: 0.5,
-//     scrollTrigger: {
-//         trigger: ".Img_center_md img",
-//         scroller: "body",
-//         // markers: true,
-//         start: "90% 25%",
-//         end: "230% 35%",
-//         scrub: 1,
-//     },
-// });
-
-// // Define the animation
-// tl.from(".grid", {
-//     x: 300,
-//     opacity: 0,
-//     stagger: 0.2,
-//     duration: 0.5,
-//     scrollTrigger: {
-//         trigger: "#grid_img",
-//         start: "top center",
-//         end: "bottom center",
-//         scrub: 1
-//     }
-// });
 gsap.registerPlugin(ScrollTrigger);
 
+
+gsap.from("#navlogo ul li, #navlogo div img", {
+    x: -80,
+    duration: 0.1,
+    opacity: 0,
+    rotate: 90,
+    stagger: 0.3,
+    delay: 0.3
+})
+
+gsap.from("#d_grid .grid", {
+    x: 100,
+    opacity: 0,
+    duration: 0.3,
+    delay: 0.3,
+    stagger: 0.2,
+    scrollTrigger: {
+      trigger: "#d_grid",
+      scroller: "body",
+      start: "10% 65%",
+      end: "bottom 90%",
+      scrub: true,
+      markers: false,
+    },
+  });
 gsap.to("#timelineMain1 .timeline_01", {
     scrollTrigger: {
         trigger: "#timelineMain1 ",
@@ -119,8 +36,7 @@ gsap.to("#timelineMain1 .timeline_01", {
     duration: 5,
     height: "100%",
     ease: "power1.out",
-}); 
-
+});
 
 gsap.to("#timelineMain1 .timeline_02", {
     scrollTrigger: {
@@ -128,11 +44,23 @@ gsap.to("#timelineMain1 .timeline_02", {
         start: "start 30%",
         end: "bottom 0%",
         scrub: true,
-        markers: true,
+        markers: false,
     },
     duration: 5,
     height: "100%",
     ease: "power1.out",
 });
 
-
+let sections = gsap.utils.toArray(".slide");
+gsap.to(sections, {
+    xPercent: -63 * (sections.length - 1),
+    ease: "linear",
+    scrollTrigger: {
+        trigger: ".horizontal-sliders",
+        pin: true,
+        pinSpacing: true,
+        scrub: true,
+        start: "top 30%",
+        end: "bottom 0%",
+    }
+});
