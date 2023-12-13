@@ -1,0 +1,24 @@
+.game-1 {
+  width: 440px !important;
+  position: absolute;
+  top: 19%;
+  right: 11%;
+  width: 100px;
+  z-index: 2;
+  transition: all linear 0.3s;
+}
+
+.number {
+  opacity: 0;
+  transition: all linear 0.3s;
+}
+
+.cols-1 {
+  opacity: 0;
+  transition: all linear 0.5s;
+}
+
+.card-show {
+  opacity: 0;
+  transition: all linear 0.5s;
+}
