@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bayou Energy</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/image/png/footer_logo_batman.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+      .fs_28 {
+        font-size: 28px;
+      }
+      .fs_18 {
+        font-size: 18px;
+      }
+      .text_gray {
+        color: #b6bfe9;
+      }
+      .text_dark_yellow {
+        color: #f5cc65;
+      }
+      .text_light_black {
+        color: #111b4c;
+      }
+      .max_w_413 {
+        max-width: 413px;
+      }
+      .ff_poppins {
+        font-family: "Poppins";
+      }
+      .mt_32 {
+        margin-top: 32px;
+      }
+      .mb_32 {
+        margin-bottom: 32px;
+      }
+      .mb_10 {
+        margin-bottom: 10px;
+      }
+      .api_btn {
+        padding: 13px 24px;
+        background-color: #e4b644;
+        border-radius: 8px;
+      }
+      .img_sticky {
+        position: sticky;
+        top: 24px;
+        right: 0;
+      }
+      .left_timeline {
+        position: absolute;
+        top: 0;
+        left: -39px;
+        height: 84%;
+        width: 2px;
+        background-color: #e3e6f0;
+      }
+      .left_timeline_yellow {
+        position: absolute;
+        top: 0;
+        left: -39px;
+        height: 0;
+        width: 2px;
+        background-color: #e4b644;
+      }
+      .timeline_circle {
+        height: 48px;
+        width: 48px;
+        background-color: #e3e6f0;
+        border-radius: 100%;
+        position: absolute;
+        left: -63px;
+        top: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="py-5">
+      <div class="container pt-4">
+        <div class="row position-relative">
+          <div class="col-5 d-flex justify-content-end" id="left_line">
+            <div class="position-relative">
+              <div class="left_timeline"></div>
+              <div class="left_timeline_yellow"></div>
+              <div class="mb_32 position-relative">
+                <div
+                  class="timeline_circle d-flex justify-content-center align-items-center"
+                >
+                  <h2 class="fs_18 fw-medium text_gray mb-0">01</h2>
+                </div>
+                <h2 class="fs_28 text_gray mb-2 fw-medium ff_poppins">Intro</h2>
+                <p class="max_w_413 fw-normal text_gray ff_poppins fs_18">
+                  In this QuickStart you will generate your API keys, create a
+                  test customer, use fake credentials to complete the form as if
+                  you were that customer, and get their bill and usage interval
+                  data instantly
+                </p>
+              </div>
+              <div class="max_w_413">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="413"
+                  height="2"
+                  viewBox="0 0 413 2"
+                  fill="none"
+                >
+                  <path
+                    opacity="0.08"
+                    d="M0 1L413 1.00004"
+                    stroke="#0A0F2A"
+                    stroke-dasharray="4 4"
+                  />
+                </svg>
+              </div>
+              <div class="mt_32 mb_32 position-relative">
+                <div
+                  class="timeline_circle d-flex justify-content-center align-items-center"
+                >
+                  <h2 class="fs_18 fw-medium text_gray mb-0">02</h2>
+                </div>
+                <h2 class="fs_28 text_gray mb-2 fw-medium ff_poppins">
+                  Environment and API keys
+                </h2>
+                <p class="max_w_413 fw-normal text_gray mb_10 ff_poppins fs_18">
+                  Bayou has two environments, production, as shown in the
+                  QuickStart, and staging. After the QuickStart you can create a
+                  separate staging account
+                </p>
+                <p class="max_w_413 fw-normal text_gray mb_10 ff_poppins fs_18">
+                  Bayou uses API keys to authenticate requests. Authentication
+                  is provided through HTTP Basic Authentication. Use your API
+                  key as the username value in the Basic Authentication scheme.
+                  The password value does not need to be filled
+                </p>
+                <p class="max_w_413 fw-normal text_gray mb_10 ff_poppins fs_18">
+                  This is your API key. For security reasons this is the only
+                  time that your key can be viewed so we recommend you save it
+                  immediately
+                </p>
+                <button
+                  class="api_btn ff_poppins fw-medium border-0 text_light_black"
+                >
+                  Get API Key
+                </button>
+              </div>
+              <div class="max_w_413">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="413"
+                  height="2"
+                  viewBox="0 0 413 2"
+                  fill="none"
+                >
+                  <path
+                    opacity="0.08"
+                    d="M0 1L413 1.00004"
+                    stroke="#0A0F2A"
+                    stroke-dasharray="4 4"
+                  />
+                </svg>
+              </div>
+              <div class="mb_32 mt_32 position-relative">
+                <div
+                  class="timeline_circle d-flex justify-content-center align-items-center"
+                >
+                  <h2 class="fs_18 fw-medium text_gray mb-0">03</h2>
+                </div>
+                <h2 class="fs_28 text_gray mb-2 fw-medium ff_poppins">
+                  Create customer
+                </h2>
+                <p class="max_w_413 fw-normal text_gray ff_poppins fs_18">
+                  First customers can be created using
+                  <span class="text_dark_yellow">
+                    Bayou’s /customers endpoint</span
+                  >
+                </p>
+                <p class="max_w_413 fw-normal text_gray ff_poppins fs_18">
+                  For the QuickStart we’ll create a customer using Speculoos,
+                  Bayou’s fake utility for testing. View full utility support
+                  here
+                </p>
+              </div>
+              <div class="max_w_413">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="413"
+                  height="2"
+                  viewBox="0 0 413 2"
+                  fill="none"
+                >
+                  <path
+                    opacity="0.08"
+                    d="M0 1L413 1.00004"
+                    stroke="#0A0F2A"
+                    stroke-dasharray="4 4"
+                  />
+                </svg>
+              </div>
+              <div class="mt_32 mb_32 position-relative">
+                <div
+                  class="timeline_circle d-flex justify-content-center align-items-center"
+                >
+                  <h2 class="fs_18 fw-medium text_gray mb-0">04</h2>
+                </div>
+                <h2 class="fs_28 text_gray mb-2 fw-medium ff_poppins">Intro</h2>
+                <p class="max_w_413 fw-normal text_gray ff_poppins fs_18">
+                  In this QuickStart you will generate your API keys, create a
+                  test customer, use fake credentials to complete the form as if
+                  you were that customer, and get their bill and usage interval
+                  data instantly
+                </p>
+              </div>
+              <div class="max_w_413">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="413"
+                  height="2"
+                  viewBox="0 0 413 2"
+                  fill="none"
+                >
+                  <path
+                    opacity="0.08"
+                    d="M0 1L413 1.00004"
+                    stroke="#0A0F2A"
+                    stroke-dasharray="4 4"
+                  />
+                </svg>
+              </div>
+              <div class="mt_32 mb_32 position-relative">
+                <div
+                  class="timeline_circle d-flex justify-content-center align-items-center"
+                >
+                  <h2 class="fs_18 fw-medium text_gray mb-0">05</h2>
+                </div>
+                <h2 class="fs_28 text_gray mb-2 fw-medium ff_poppins">
+                  Environment and API keys
+                </h2>
+                <p class="max_w_413 fw-normal text_gray mb_10 ff_poppins fs_18">
+                  Bayou has two environments, production, as shown in the
+                  QuickStart, and staging. After the QuickStart you can create a
+                  separate staging account
+                </p>
+                <p class="max_w_413 fw-normal text_gray mb_10 ff_poppins fs_18">
+                  Bayou uses API keys to authenticate requests. Authentication
+                  is provided through HTTP Basic Authentication. Use your API
+                  key as the username value in the Basic Authentication scheme.
+                  The password value does not need to be filled
+                </p>
+                <p class="max_w_413 fw-normal text_gray mb_10 ff_poppins fs_18">
+                  This is your API key. For security reasons this is the only
+                  time that your key can be viewed so we recommend you save it
+                  immediately
+                </p>
+                <button
+                  class="api_btn ff_poppins fw-medium border-0 text_light_black"
+                >
+                  Get API Key
+                </button>
+              </div>
+              <div class="max_w_413">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="413"
+                  height="2"
+                  viewBox="0 0 413 2"
+                  fill="none"
+                >
+                  <path
+                    opacity="0.08"
+                    d="M0 1L413 1.00004"
+                    stroke="#0A0F2A"
+                    stroke-dasharray="4 4"
+                  />
+                </svg>
+              </div>
+              <div class="mb_32 mt_32 position-relative">
+                <div
+                  class="timeline_circle d-flex justify-content-center align-items-center"
+                >
+                  <h2 class="fs_18 fw-medium text_gray mb-0">06</h2>
+                </div>
+                <h2 class="fs_28 text_gray mb-2 fw-medium ff_poppins">
+                  Create customer
+                </h2>
+                <p class="max_w_413 fw-normal text_gray ff_poppins fs_18">
+                  First customers can be created using
+                  <span class="text_dark_yellow">
+                    Bayou’s /customers endpoint</span
+                  >
+                </p>
+                <p class="max_w_413 fw-normal text_gray ff_poppins fs_18">
+                  For the QuickStart we’ll create a customer using Speculoos,
+                  Bayou’s fake utility for testing. View full utility support
+                  here
+                </p>
+              </div>
+              <div class="max_w_413">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="413"
+                  height="2"
+                  viewBox="0 0 413 2"
+                  fill="none"
+                >
+                  <path
+                    opacity="0.08"
+                    d="M0 1L413 1.00004"
+                    stroke="#0A0F2A"
+                    stroke-dasharray="4 4"
+                  />
+                </svg>
+              </div>
+              <div class="mt_32 position-relative">
+                <div
+                  class="timeline_circle d-flex justify-content-center align-items-center"
+                >
+                  <h2 class="fs_18 fw-medium text_gray mb-0">07</h2>
+                </div>
+                <h2 class="fs_28 text_gray mb-2 fw-medium ff_poppins">
+                  Environment and API keys
+                </h2>
+                <p class="max_w_413 fw-normal text_gray mb_10 ff_poppins fs_18">
+                  Bayou has two environments, production, as shown in the
+                  QuickStart, and staging. After the QuickStart you can create a
+                  separate staging account
+                </p>
+                <p class="max_w_413 fw-normal text_gray mb_10 ff_poppins fs_18">
+                  Bayou uses API keys to authenticate requests. Authentication
+                  is provided through HTTP Basic Authentication. Use your API
+                  key as the username value in the Basic Authentication scheme.
+                  The password value does not need to be filled
+                </p>
+                <p class="max_w_413 fw-normal text_gray mb_10 ff_poppins fs_18">
+                  This is your API key. For security reasons this is the only
+                  time that your key can be viewed so we recommend you save it
+                  immediately
+                </p>
+                <button
+                  class="api_btn ff_poppins fw-medium border-0 text_light_black"
+                >
+                  Get API Key
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-7">
+            <img
+              class="img_sticky"
+              src="/assets/image/png/html_code_img.png"
+              alt="html_code_img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#left_line",
+          start: "1% 5%",
+          end: "10% 80%",
+          toggleActions: "play none none reverse",
+          markers: true,
+          scrub:true
+        },
+      });
+      tl.to(".left_timeline_yellow", {
+        height: "84%",
+        ease: "power1.out",
+      }
+      );
+    </script>
+  </body>
+</html>
