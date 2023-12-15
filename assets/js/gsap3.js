@@ -40,7 +40,7 @@ tl.from("#game", {
   duration: 2,
   opacity: 0,
   delay: 2,
-  stagger: 0.3,
+  stagger: 0.2,
 });
 
 tl.from("#text", {
@@ -50,7 +50,9 @@ tl.from("#text", {
   delay: 2,
   stagger: 0.3,
 });
+
 // {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{CARDS}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}} //
+
 var tl = gsap.timeline({
   scrollTrigger: {
     trigger: "#three",
@@ -88,6 +90,7 @@ tl.from("#public div", {
 });
 
 // {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{TIME-LINE}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}} //
+
 gsap.to("#roadmap1, .roadmap_line", {
   scrollTrigger: {
     trigger: "#roadmap1, .roadmap_line",
