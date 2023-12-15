@@ -1,13 +1,11 @@
 // ========= NAVBAR ==========
-gsap.from("#navlogo ul li , #navlogo div img", {
-  y: -80,
+gsap.from("#navgsap ul li a, #navgsap div img", {
+  x: 80,
   duration: 0.3,
-  // opacity: 0,
   stagger: 0.2,
   delay: 0.1,
-  // rotate:90,
 });
-// ======== BURGERS ==========
+// ======== BURGERS ============
 gsap.registerPlugin(ScrollTrigger);
 const tl = gsap.timeline({
   scrollTrigger: {
@@ -28,54 +26,84 @@ tl.fromTo(
     duration: 1.0,
   }
 );
-// ========== DISCOVER =======
-gsap.from("#discover", {
+var tl2 = gsap.timeline();
+tl2.from("#main #imageScroll img", {
+  duration: 10,
+  stagger: 1.3,
+  x: "-100%",
+  scrollTrigger: {
+    trigger: "#main #imageScroll",
+    scroller: "body",
+    markers: false,
+    start: "center 25%",
+    end: "100% 100%",
+    scrub: 1,
+    pin: "#main",
+  },
+});
+// Salona
+gsap.to("#salona", {
+  scale: 2,
+  duration: 10,
+  opacity: 0,
+  delay: 0.8,
+  scrollTrigger: {
+    trigger: "#salona",
+    scroller: "body",
+    markers: true,
+    start: "10% 50%",
+    end: "150% 60%",
+    scrub: true,
+  },
+});
+// ========== popularized ===========
+gsap.from("#popularised", {
   x: -100,
   opacity: 0,
   duration: 0.4,
   ease: "linear",
   scrollTrigger: {
-    trigger: "#discover",
+    trigger: "#popularised",
     scroller: "body",
-    start: "20% 60%",
-    end: "bottom 90%",
+    start: "10% 60%",
+    end: "bottom 80%",
     markers: false,
     scrub: true,
   },
 });
-gsap.from("#discover_img", {
+gsap.from("#popularised_img", {
   x: 100,
   opacity: 0,
   duration: 0.4,
   ease: "linear",
   scrollTrigger: {
-    trigger: "#discover_img",
+    trigger: "#popularised_img",
     scroller: "body",
-    start: "20% 50%",
-    end: "bottom 90%",
+    start: "10% 50%",
+    end: "bottom 80%",
     markers: false,
     scrub: true,
   },
 });
-// ======== CARDS ============
+//  ============= CARDS =============
 tl.from("#cards .cards", {
   x: 100,
   opacity: 0,
-  duration: 0.3,
-  delay: 0.3,
-  stagger: 0.2,
+  duration: 10,
+  delay: 10,
+  stagger: 8,
   scrollTrigger: {
     trigger: "#cards",
     scroller: "body",
-    start: "0% 50%",
-    end: "bottom 90%",
+    start: "10% 95%",
+    end: "100% 90%",
     scrub: true,
     markers: false,
   },
 });
-//========== SUPPLIES ========
+//========== SUPPLIES =============
 tl.from(".supplies", {
-  scale: 0.5,
+  scale: 0.8,
   opacity: 0,
   delay: 1,
   stagger: 0.1,
@@ -89,12 +117,12 @@ tl.from(".supplies", {
     markers: false,
   },
 });
-// ======ROADMAP =============
+// ======ROADMAP ===========
 gsap.to("#roadmap1, .roadmap_line", {
   scrollTrigger: {
     trigger: "#roadmap1, .roadmap_line",
     start: "start center",
-    end: "bottom center",
+    end: "center center",
     markers: false,
     scrub: true,
   },
@@ -102,29 +130,25 @@ gsap.to("#roadmap1, .roadmap_line", {
   duration: 5,
   ease: "power1.out",
 });
-gsap.to("#roadmap2, .roadmap_line2", {
+var tl2 = gsap.timeline({
   scrollTrigger: {
-    trigger: "#roadmap2, .roadmap_line2",
-    start: "70% 44%",
-    end: "100% 20%",
+    trigger: "#slide #slidebox",
+    scroller: "body",
     markers: false,
+    stagger: 0.3,
+    start: "center center",
+    end: "bottom bottom",
     scrub: true,
   },
-  height: "100%",
-  duration: 5,
-  ease: "power1.out",
 });
-// ========= SLIDER ==========
-let sections = gsap.utils.toArray(".scroll");
-gsap.to(sections, {
-  xPercent: -59 * (sections.length - 1),
-  ease: "linear",
-  scrollTrigger: {
-    trigger: "#slider",
-    pin: true,
-    pinSpacing: false,
-    scrub: true,
-    start: "top 30%",
-    end: "bottom 30%",
+tl2.fromTo(
+  "#slide #slidebox div ",
+  {
+    duration: 10,
+    stagger: 0.3,
+    x: "0%",
   },
-});
+  {
+    x: "-400%",
+  }
+);
