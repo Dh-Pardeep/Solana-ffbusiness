@@ -17,9 +17,13 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
 
-  <body>
+  <body class="bg_color_2 hello">
     <!-- header  -->
     <header class="position-sticky z-3 top-0">
       <!-- nav -->
@@ -97,63 +101,66 @@
           alt="burger_image"
         />
       </section>
-      <section class="bg_color_2 position-relative">
+      <section class="bg_color_2 position-relative" id="img">
         <img
-          id="cartoon"
+          id="berger"
           class="position-absolute w_45px w_sm_65px w_lg_8 c"
           src="./assets/image/png/bgr1.png"
           alt="burger_image_1"
         />
         <img
-          id="cartoon"
+          id="berger"
           class="position-absolute w_45px w_sm_65px w_lg_8 bgr_transform"
           src="./assets/image/png/bgr2.png"
           alt="burger_image_2"
         />
         <img
-          id="cartoon"
+          id="berger"
           class="position-absolute w_45px w_sm_65px w_lg_8 bgr_transform"
           src="./assets/image/png/bgr3.png"
           alt="burger_image_3"
         />
         <img
-          id="cartoon"
+          id="berger"
           class="position-absolute w_45px w_sm_65px w_lg_8 bgr_transform"
           src="./assets/image/png/bgr4.png"
           alt="burger_image_4"
         />
         <img
-          id="cartoon"
+          id="berger"
           class="position-absolute w_45px w_sm_65px w_lg_8 bgr_transform"
           src="./assets/image/png/bgr5.png"
           alt="burger_image_5"
         />
         <img
-          id="cartoon"
+          id="berger"
           class="position-absolute w_45px w_sm_65px w_lg_8 bgr_transform"
           src="./assets/image/png/bgr6.png"
           alt="burger_image_6"
         />
         <img
-          id="cartoon"
+          id="berger"
           class="position-absolute w_45px w_sm_65px w_lg_8 bgr_transform"
           src="./assets/image/png/bgr7.png"
           alt="burger_image_7"
         />
         <img
-          id="cartoon"
+          id="berger"
           class="position-absolute w_45px w_sm_65px w_lg_8 bgr_transform"
           src="./assets/image/png/bgr8.png"
           alt="burger_image_8"
         />
         <div class="container pb_48 pt-3">
           <h2
-            class="text-center ff_poppins fw_700 fs_24 fs_sm_28 fs_md_33 fs_lg_36 fstyle_normal color_black pt-5"
+            class="animate__animated animate__flash animate__slow text-center ff_poppins fw_700 fs_24 fs_sm_28 fs_md_33 fs_lg_36 fstyle_normal color_black pt-5"
+            data-wow-delay="0.5s"
           >
             WELCOME TO
           </h2>
           <div class="mb-5 pb-xl-1 w_md_60 w_lg_60 Img_center_md">
-            <div class="position-relative mb-5">
+            <div
+              class="animate__animated animate__zoomInDown animate__slow animate__delay-1s position-relative mb-5"
+            >
               <img src="./assets/image/png/logo.png" alt="logo" class="w-100" />
               <img
                 src="./assets/image/png/hero_down.png"
@@ -393,7 +400,7 @@
           src="./assets/image/png/timeline8.png"
           alt="timelinebgr"
         />
-        <div class="container">
+        <div class="container" id="timeline">
           <div class="pt-2">
             <h2
               class="ff_poppins fw_700 fs_32 fs_sm_38 fs_md_43 fs_lg_48 fst-normal color_black text-center pt-5 pb-4"
@@ -401,7 +408,8 @@
               ROADMAP 1.0
             </h2>
           </div>
-          <div class="timeline">
+
+          <div class="overflow-hidden" id="roadmap1">
             <div class="container_timeline left">
               <div class="content">
                 <h2 class="ff_poppins fs_22 fs_md_24">Q4&nbsp;&nbsp;2021</h2>
@@ -411,8 +419,12 @@
                   <li>Apply for secondary marketplace listings</li>
                 </ol>
               </div>
+              <div class="roadmap_line"></div>
+              <div class="roadmap_line_white"></div>
             </div>
-            <div class="container_timeline right">
+            <div class="container_timeline right" id="roadmap2">
+              <div class="roadmap_line2"></div>
+              <div class="roadmap_line_white2"></div>
               <div class="content">
                 <h2 class="ff_poppins fs_22 fs_md_24">Q1&nbsp;&nbsp;2022</h2>
                 <ol type="1" class="mb-0">
@@ -434,73 +446,219 @@
           </div>
         </div>
       </section>
-      <section class="bg_color_3">
-        <div class="container pb-lg-4">
-          <h2
-            class="ff_poppins fw_700 fs_32 fs_sm_38 fs_md_43 fs_lg_48 fst-normal text-center color_black pt-5 mb-4 pb-lg-3"
-          >
-            Team
-          </h2>
-          <div class="row">
-            <div class="col-12 col-sm-6 col-lg-3">
-              <img
-                src="./assets/image/png/section_last1.png"
-                class="w-100 grid"
-                alt="section_last1"
-              />
-              <h2
-                class="ff_poppins fst-normal fs_md_24 fs_sm_22 fs_20 fw_700 text-center mt-3"
-              >
-                Jhone Doe
-              </h2>
-              <h3 class="ff_poppins fst-normal text-center fw_400 fs_18 mb_35">
-                Manager
-              </h3>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-              <img
-                src="./assets/image/png/section_last2.png"
-                class="w-100 grid"
-                alt="section_last1"
-              />
-              <h2
-                class="ff_poppins fst-normal fs_md_24 fs_sm_22 fs_20 fw_700 text-center mt-3"
-              >
-                Jhone Doe
-              </h2>
-              <h3 class="ff_poppins fst-normal text-center fw_400 fs_18 mb_35">
-                Manager
-              </h3>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-              <img
-                src="./assets/image/png/section_last3.png"
-                class="w-100 grid"
-                alt="section_last1"
-              />
-              <h2
-                class="ff_poppins fst-normal fs_md_24 fs_sm_22 fs_20 fw_700 text-center mt-3"
-              >
-                Jhone Doe
-              </h2>
-              <h3 class="ff_poppins fst-normal text-center fw_400 fs_18 mb_35">
-                Manager
-              </h3>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-              <img
-                src="./assets/image/png/section_last4.png"
-                class="w-100 grid"
-                alt="section_last1"
-              />
-              <h2
-                class="ff_poppins fst-normal fs_md_24 fs_sm_22 fs_20 fw_700 text-center mt-3"
-              >
-                Jhone Doe
-              </h2>
-              <h3 class="ff_poppins fst-normal text-center fw_400 fs_18 mb_35">
-                Manager
-              </h3>
+      <section class="bg_color_3 z-1" id="slider">
+        <div class="container">
+          <div class="pb-lg-4">
+            <h2
+              class="ff_poppins fw_700 fs_32 fs_sm_38 fs_md_43 fs_lg_48 fst-normal text-center color_black pt-5 mb-4 pb-lg-3"
+            >
+              Team
+            </h2>
+            <div class="d-flex align-items-center overflow-x-scroll gap-4">
+              <div class="scroll">
+                <img
+                  src="./assets/image/png/section_last1.png"
+                  class="grid"
+                  alt="section_last1"
+                />
+                <h2
+                  class="ff_poppins fst-normal fs_md_24 fs_sm_22 fs_20 fw_700 text-center mt-3"
+                >
+                  Jhone Doe
+                </h2>
+                <h3
+                  class="ff_poppins fst-normal text-center fw_400 fs_18 mb_35"
+                >
+                  Manager
+                </h3>
+              </div>
+              <div class="scroll">
+                <img
+                  src="./assets/image/png/section_last2.png"
+                  class="grid"
+                  alt="section_last1"
+                />
+                <h2
+                  class="ff_poppins fst-normal fs_md_24 fs_sm_22 fs_20 fw_700 text-center mt-3"
+                >
+                  Jhone Doe
+                </h2>
+                <h3
+                  class="ff_poppins fst-normal text-center fw_400 fs_18 mb_35"
+                >
+                  Manager
+                </h3>
+              </div>
+              <div class="scroll">
+                <img
+                  src="./assets/image/png/section_last3.png"
+                  class="grid"
+                  alt="section_last1"
+                />
+                <h2
+                  class="ff_poppins fst-normal fs_md_24 fs_sm_22 fs_20 fw_700 text-center mt-3"
+                >
+                  Jhone Doe
+                </h2>
+                <h3
+                  class="ff_poppins fst-normal text-center fw_400 fs_18 mb_35"
+                >
+                  Manager
+                </h3>
+              </div>
+              <div class="scroll">
+                <img
+                  src="./assets/image/png/section_last4.png"
+                  class="grid"
+                  alt="section_last1"
+                />
+                <h2
+                  class="ff_poppins fst-normal fs_md_24 fs_sm_22 fs_20 fw_700 text-center mt-3"
+                >
+                  Jhone Doe
+                </h2>
+                <h3
+                  class="ff_poppins fst-normal text-center fw_400 fs_18 mb_35"
+                >
+                  Manager
+                </h3>
+              </div>
+              <div class="scroll">
+                <img
+                  src="./assets/image/png/section_last1.png"
+                  class="grid"
+                  alt="section_last1"
+                />
+                <h2
+                  class="ff_poppins fst-normal fs_md_24 fs_sm_22 fs_20 fw_700 text-center mt-3"
+                >
+                  Jhone Doe
+                </h2>
+                <h3
+                  class="ff_poppins fst-normal text-center fw_400 fs_18 mb_35"
+                >
+                  Manager
+                </h3>
+              </div>
+              <div class="scroll">
+                <img
+                  src="./assets/image/png/section_last2.png"
+                  class="grid"
+                  alt="section_last1"
+                />
+                <h2
+                  class="ff_poppins fst-normal fs_md_24 fs_sm_22 fs_20 fw_700 text-center mt-3"
+                >
+                  Jhone Doe
+                </h2>
+                <h3
+                  class="ff_poppins fst-normal text-center fw_400 fs_18 mb_35"
+                >
+                  Manager
+                </h3>
+              </div>
+              <div class="scroll">
+                <img
+                  src="./assets/image/png/section_last3.png"
+                  class="grid"
+                  alt="section_last1"
+                />
+                <h2
+                  class="ff_poppins fst-normal fs_md_24 fs_sm_22 fs_20 fw_700 text-center mt-3"
+                >
+                  Jhone Doe
+                </h2>
+                <h3
+                  class="ff_poppins fst-normal text-center fw_400 fs_18 mb_35"
+                >
+                  Manager
+                </h3>
+              </div>
+              <div class="scroll">
+                <img
+                  src="./assets/image/png/section_last4.png"
+                  class="grid"
+                  alt="section_last1"
+                />
+                <h2
+                  class="ff_poppins fst-normal fs_md_24 fs_sm_22 fs_20 fw_700 text-center mt-3"
+                >
+                  Jhone Doe
+                </h2>
+                <h3
+                  class="ff_poppins fst-normal text-center fw_400 fs_18 mb_35"
+                >
+                  Manager
+                </h3>
+              </div>
+              <div class="scroll">
+                <img
+                  src="./assets/image/png/section_last4.png"
+                  class="grid"
+                  alt="section_last1"
+                />
+                <h2
+                  class="ff_poppins fst-normal fs_md_24 fs_sm_22 fs_20 fw_700 text-center mt-3"
+                >
+                  Jhone Doe
+                </h2>
+                <h3
+                  class="ff_poppins fst-normal text-center fw_400 fs_18 mb_35"
+                >
+                  Manager
+                </h3>
+              </div>
+              <div class="scroll">
+                <img
+                  src="./assets/image/png/section_last4.png"
+                  class="grid"
+                  alt="section_last1"
+                />
+                <h2
+                  class="ff_poppins fst-normal fs_md_24 fs_sm_22 fs_20 fw_700 text-center mt-3"
+                >
+                  Jhone Doe
+                </h2>
+                <h3
+                  class="ff_poppins fst-normal text-center fw_400 fs_18 mb_35"
+                >
+                  Manager
+                </h3>
+              </div>
+              <div class="scroll">
+                <img
+                  src="./assets/image/png/section_last4.png"
+                  class="grid"
+                  alt="section_last1"
+                />
+                <h2
+                  class="ff_poppins fst-normal fs_md_24 fs_sm_22 fs_20 fw_700 text-center mt-3"
+                >
+                  Jhone Doe
+                </h2>
+                <h3
+                  class="ff_poppins fst-normal text-center fw_400 fs_18 mb_35"
+                >
+                  Manager
+                </h3>
+              </div>
+              <div class="scroll">
+                <img
+                  src="./assets/image/png/section_last4.png"
+                  class="grid"
+                  alt="section_last1"
+                />
+                <h2
+                  class="ff_poppins fst-normal fs_md_24 fs_sm_22 fs_20 fw_700 text-center mt-3"
+                >
+                  Jhone Doe
+                </h2>
+                <h3
+                  class="ff_poppins fst-normal text-center fw_400 fs_18 mb_35"
+                >
+                  Manager
+                </h3>
+              </div>
             </div>
           </div>
         </div>
