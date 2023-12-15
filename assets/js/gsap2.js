@@ -34,19 +34,19 @@ gsap.from("#burger .w_45px", {
     scrub: 1,
   },
 });
-// gsap.to(".Img_center_md img", {
-//   scale: 6,
-//   opacity: 0,
-//   duration: 0.5,
-//   scrollTrigger: {
-//     trigger: ".Img_center_md img",
-//     scroller: "body",
-//     // markers: true,
-//     start: "90% 25%",
-//     end: "230% 35%",
-//     scrub: 1,
-//   },
-// });
+gsap.to(".Img_center_md img", {
+  scale: 6,
+  opacity: 0,
+  duration: 0.5,
+  scrollTrigger: {
+    trigger: ".Img_center_md img",
+    scroller: "body",
+    // markers: true,
+    start: "90% 25%",
+    end: "230% 35%",
+    scrub: 1,
+  },
+});
 var tl3 = gsap.timeline({
   scrollTrigger: {
     trigger: "#section2 #para2,#section2 div img",
