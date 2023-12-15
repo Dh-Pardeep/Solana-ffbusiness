@@ -128,7 +128,6 @@ gsap.to(sections, {
     end: "60% 30%",
   },
 });
-
 // {{{{{{{{{{smooth scroll animation}}}}}}}}}} //
 window.scroll({
   top: 0,
